@@ -1,6 +1,4 @@
-
 import React, { useEffect, useState } from "react";
-
 const Accordian1 = () => {
     const data = [
         {
@@ -22,6 +20,7 @@ const Accordian1 = () => {
         }
     ]
     const [isActive, setActive] = useState([])
+    const [preActive,setPre]=useState()
     useEffect(() => {
         const byDefault = []
         for (let i = 0; i < data.length; i++) {
@@ -32,20 +31,10 @@ const Accordian1 = () => {
 
     }, [])
     const changeState = (index) => {
-        let newState = []
-        for (let i = 0; i < data.length; i++) {
-            if (parseInt(index) === i) {
-                newState.push(true)
-
-
-            } else {
-                newState.push(false)
-            }
-
-        }
-        setActive(newState)
-
-
+        console.log("this is active")
+        isActive[preActive]=false
+        isActive[index]=true
+        setPre(index)
     }
     return (
         <>
