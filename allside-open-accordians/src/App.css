@@ -1,0 +1,53 @@
+.accordion-item-down{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;  
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 10px auto;
+
+ 
+}
+button{
+  background-color: lavender;
+  padding: 10px;
+  margin-left: 10px;
+
+}
+.accordion-content{
+  background-color: lightblue;
+}
+
+.accordion-item-up{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column-reverse;  
+}
+.items{
+  width: 80%;
+}
+
+.accordion-item-right{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;  
+}
+
+.accordion-item-left{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row-reverse;  
+}
+
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #08aaca;
+  border-radius: 10px;
+}
